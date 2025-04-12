@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ancore Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Smooth transitions for content switching */
+    .tab-content {
+      display: none;
+    }
+
+    .active-tab {
+      display: block;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInUp {
+      0% {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .animate-fadeIn {
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    .animate-slideInUp {
+      animation: slideInUp 1s ease-out;
+    }
+
+    /* Feature box hover effect - Make entire box clickable like a button */
+    .feature-box {
+      transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transitions for scaling and background */
+      cursor: pointer; /* Make it behave like a button */
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #efefe1;
+      border: 1px solid #2b3743;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .feature-box:hover {
+      transform: scale(1.05); /* Slightly enlarge the box on hover */
+      background-color: #cccccc; /* Darken the background on hover */
+    }
+
+    .feature-box a {
+      color: #2b3743;
+      text-decoration: none;
+    }
+
+    .feature-box a:hover {
+      color: #1e2a31; /* Darker color when hovering over the link */
+    }
+  </style>
+</head>
+<body class="bg-[#2b3743] text-[#efefe1] font-sans">
+  <!-- Navigation -->
+  <header class="fixed top-0 w-full bg-[#2b3743] backdrop-blur-md z-50">
+    <div class="container mx-auto flex items-center justify-between px-6 py-4">
+      <!-- Logo and Name -->
+      <div class="flex items-center space-x-3">
+        <!-- Image beside the Ancore name -->
+        <img src="https://i.imgur.com/xMk3Y7E.png" alt="Ancore Logo" class="w-12 h-12 object-contain">
+        <div class="text-lg font-bold text-[#efefe1]">Ancore</div>
+      </div>
+
+      <nav class="hidden md:flex space-x-6">
+        <!-- Links to different sections/pages -->
+        <a href="Ancore1.html" class="hover:underline text-[#efefe1]">Home</a>
+        <a href="products.html" class="hover:underline text-[#efefe1]">Products/Services</a>
+        <a href="about.html" class="hover:underline text-[#efefe1]">About Us</a>
+        <a href="support.html" class="hover:underline text-[#efefe1]">Customer Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="h-screen flex items-center justify-center bg-cover bg-center relative" style="background-image: url('https://i.imgur.com/drLs5B3.jpg');" aria-label="Construction site in progress with scaffolding and cranes.">
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative text-center max-w-screen-md mx-auto space-y-6 animate-fadeIn">
+      <h1 class="text-3xl md:text-6xl font-bold text-[#efefe1] animate-slideInUp">Experience the Future</h1>
+      <p class="text-base md:text-2xl text-[#efefe1] animate-slideInUp delay-150">Ancore, Reliable Solutions for Shaky Situations</p>
+      <div class="space-x-4 animate-slideInUp delay-300">
+<a href="pricing.html" class="px-6 py-3 bg-[#efefe1] text-[#2b3743] font-semibold rounded-lg hover:bg-gray-200">Get Started</a>
+        <a href="about.html" class="px-6 py-3 bg-[#2b3743] text-[#efefe1] font-semibold rounded-lg hover:bg-gray-700">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-16 bg-[#efefe1] text-[#2b3743] rounded-lg shadow-lg">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-8">Why Choose Us?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Feature 1: Completed Projects -->
+        <a href="completed-projects.html" class="feature-box">
+          <h3 class="text-xl font-semibold mb-4">Completed Projects</h3>
+          <p>Experience unmatched speed and efficiency with every brick.</p>
+        </a>
+
+        <!-- Feature 2: Technology -->
+        <a href="technology.html" class="feature-box">
+          <h3 class="text-xl font-semibold mb-4">Technology</h3>
+          <p>We stay ahead with cutting-edge earthquake-resistant innovations.</p>
+        </a>
+
+        <!-- Feature 3: Testimonials -->
+        <a href="testimonials.html" class="feature-box">
+          <h3 class="text-xl font-semibold mb-4">Testimonials</h3>
+          <p>Comments from our satisfied customers.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+ <!-- Footer -->
+<footer class="py-8 bg-[#2b3743] text-[#efefe1]">
+  <div class="container mx-auto text-center space-y-4">
+    <p>&copy; 2025 Ancore. All Rights Reserved.</p>
+    <nav class="space-x-4">
+      <!-- Privacy Policy Button -->
+      <a href="privacy.html" class="hover:text-white">Privacy Policy</a>
+      <!-- Terms of Service Button -->
+      <a href="terms.html" class="hover:text-white">Terms of Service</a>
+      <!-- Contact Us Button -->
+      <a href="support.html" class="hover:text-white">Contact Us</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>

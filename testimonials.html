@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonials - Ancore</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Additional Styles */
+    .testimonial-box {
+      background-color: #ffffff;
+      border: 1px solid #2b3743;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      transition: background-color 0.3s;
+    }
+
+    .testimonial-box:hover {
+      background-color: #f0f0f0;
+    }
+
+    .testimonial-avatar {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .testimonial-author {
+      font-weight: bold;
+      color: #2b3743;
+    }
+
+    .testimonial-text {
+      color: #444;
+      margin-top: 10px;
+    }
+
+    .testimonial-rating {
+      display: flex;
+      gap: 5px;
+      margin-top: 10px;
+    }
+
+    .testimonial-rating svg {
+      color: #f39c12;
+    }
+  </style>
+</head>
+<body class="bg-[#2b3743] text-[#efefe1] font-sans">
+ <!-- Navigation -->
+<header class="fixed top-0 w-full bg-[#2b3743] backdrop-blur-md z-50">
+  <div class="container mx-auto flex items-center justify-between px-6 py-4">
+    <!-- Logo and Name -->
+    <div class="flex items-center space-x-3">
+      <!-- Image beside the Ancore name -->
+      <img src="https://i.imgur.com/xMk3Y7E.png" alt="Ancore Logo" class="w-12 h-12 object-contain">
+      <div class="text-lg font-bold text-[#efefe1]">Ancore</div>
+    </div>
+
+    <nav class="hidden md:flex space-x-6">
+      <a href="Ancore1.html" class="hover:underline text-[#efefe1]">Home</a>
+      <a href="products.html" class="hover:underline text-[#efefe1]">Products/Services</a>
+      <a href="about.html" class="hover:underline text-[#efefe1]">About Us</a>
+      <a href="support.html" class="hover:underline text-[#efefe1]">Customer Support</a>
+    </nav>
+  </div>
+</header>
+
+
+  <!-- Testimonials Section -->
+  <section class="py-16 pt-24 bg-[#efefe1] text-[#2b3743]">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-8">What Our Customers Say</h2>
+      <p class="text-lg mb-8">We pride ourselves on delivering excellent service. Here's what our clients have to say about us:</p>
+
+      <!-- Testimonial Cards (Review Section) -->
+      <div class="space-y-8">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-box">
+          <div class="flex items-center space-x-4">
+            <img src="https://via.placeholder.com/60" alt="User Image" class="testimonial-avatar">
+            <div>
+              <p class="testimonial-author">Customer A</p>
+              <p class="text-sm text-gray-500">May 10, 2025</p>
+            </div>
+          </div>
+          <p class="testimonial-text">"The service was excellent and the construction exceeded our expectations. Our building is now stronger and more resilient than ever!"</p>
+          <div class="testimonial-rating">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 20 20" stroke="currentColor"><path d="M9.049 2.927C9.243 2.492 9.757 2.492 9.951 2.927l1.263 2.667 2.938.236c.073.006.142.024.21.051.365.084.574.438.512.803l-2.24 2.205.749 2.988c.057.233-.064.475-.27.64-.207.165-.471.184-.694.054l-2.789-1.599-2.789 1.6c-.224.13-.488.11-.695-.053a.752.752 0 01-.271-.64l.749-2.987-2.24-2.205a.752.752 0 01.512-.803c.069-.027.138-.045.21-.051l2.938-.236 1.263-2.667z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 20 20" stroke="currentColor"><path d="M9.049 2.927C9.243 2.492 9.757 2.492 9.951 2.927l1.263 2.667 2.938.236c.073.006.142.024.21.051.365.084.574.438.512.803l-2.24 2.205.749 2.988c.057.233-.064.475-.27.64-.207.165-.471.184-.694.054l-2.789-1.599-2.789 1.6c-.224.13-.488.11-.695-.053a.752.752 0 01-.271-.64l.749-2.987-2.24-2.205a.752.752 0 01.512-.803c.069-.027.138-.045.21-.051l2.938-.236 1.263-2.667z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 20 20" stroke="currentColor"><path d="M9.049 2.927C9.243 2.492 9.757 2.492 9.951 2.927l1.263 2.667 2.938.236c.073.006.142.024.21.051.365.084.574.438.512.803l-2.24 2.205.749 2.988c.057.233-.064.475-.27.64-.207.165-.471.184-.694.054l-2.789-1.599-2.789 1.6c-.224.13-.488.11-.695-.053a.752.752 0 01-.271-.64l.749-2.987-2.24-2.205a.752.752 0 01.512-.803c.069-.027.138-.045.21-.051l2.938-.236 1.263-2.667z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 20 20" stroke="currentColor"><path d="M9.049 2.927C9.243 2.492 9.757 2.492 9.951 2.927l1.263 2.667 2.938.236c.073.006.142.024.21.051.365.084.574.438.512.803l-2.24 2.205.749 2.988c.057.233-.064.475-.27.64-.207.165-.471.184-.694.054l-2.789-1.599-2.789 1.6c-.224.13-.488.11-.695-.053a.752.752 0 01-.271-.64l.749-2.987-2.24-2.205a.752.752 0 01.512-.803c.069-.027.138-.045.21-.051l2.938-.236 1.263-2.667z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 20 20" stroke="currentColor"><path d="M9.049 2.927C9.243 2.492 9.757 2.492 9.951 2.927l1.263 2.667 2.938.236c.073.006.142.024.21.051.365.084.574.438.512.803l-2.24 2.205.749 2.988c.057.233-.064.475-.27.64-.207.165-.471.184-.694.054l-2.789-1.599-2.789 1.6c-.224.13-.488.11-.695-.053a.752.752 0 01-.271-.64l.749-2.987-2.24-2.205a.752.752 0 01.512-.803c.069-.027.138-.045.21-.051l2.938-.236 1.263-2.667z"></path></svg>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-box">
+          <div class="flex items-center space-x-4">
+            <img src="https://via.placeholder.com/60" alt="User Image" class="testimonial-avatar">
+            <div>
+              <p class="testimonial-author">Customer B</p>
+              <p class="text-sm text-gray-500">April 22, 2025</p>
+            </div>
+          </div>
+          <p class="testimonial-text">"We are extremely satisfied with the earthquake-resistant features of our building. The team at Ancore ensured everything was built to the highest standards, and they also did it in a very efficient manner.</p>
+          <div class="testimonial-rating">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 20 20" stroke="currentColor"><path d="M9.049 2.927C9.243 2.492 9.757 2.492 9.951 2.927l1.263 2.667 2.938.236c.073.006.142.024.21.051.365.084.574.438.512.803l-2.24 2.205.749 2.988c.057.233-.064.475-.27.64-.207.165-.471.184-.694.054l-2.789-1.599-2.789 1.6c-.224.13-.488.11-.695-.053a.752.752 0 01-.271-.64l.749-2.987-2.24-2.205a.752.752 0 01.512-.803c.069-.027.138-.045.21-.051l2.938-.236 1.263-2.667z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 20 20" stroke="currentColor"><path d="M9.049 2.927C9.243 2.492 9.757 2.492 9.951 2.927l1.263 2.667 2.938.236c.073.006.142.024.21.051.365.084.574.438.512.803l-2.24 2.205.749 2.988c.057.233-.064.475-.27.64-.207.165-.471.184-.694.054l-2.789-1.599-2.789 1.6c-.224.13-.488.11-.695-.053a.752.752 0 01-.271-.64l.749-2.987-2.24-2.205a.752.752 0 01.512-.803c.069-.027.138-.045.21-.051l2.938-.236 1.263-2.667z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 20 20" stroke="currentColor"><path d="M9.049 2.927C9.243 2.492 9.757 2.492 9.951 2.927l1.263 2.667 2.938.236c.073.006.142.024.21.051.365.084.574.438.512.803l-2.24 2.205.749 2.988c.057.233-.064.475-.27.64-.207.165-.471.184-.694.054l-2.789-1.599-2.789 1.6c-.224.13-.488.11-.695-.053a.752.752 0 01-.271-.64l.749-2.987-2.24-2.205a.752.752 0 01.512-.803c.069-.027.138-.045.21-.051l2.938-.236 1.263-2.667z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 20 20" stroke="currentColor"><path d="M9.049 2.927C9.243 2.492 9.757 2.492 9.951 2.927l1.263 2.667 2.938.236c.073.006.142.024.21.051.365.084.574.438.512.803l-2.24 2.205.749 2.988c.057.233-.064.475-.27.64-.207.165-.471.184-.694.054l-2.789-1.599-2.789 1.6c-.224.13-.488.11-.695-.053a.752.752 0 01-.271-.64l.749-2.987-2.24-2.205a.752.752 0 01.512-.803c.069-.027.138-.045.21-.051l2.938-.236 1.263-2.667z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 20 20" stroke="currentColor"><path d="M9.049 2.927C9.243 2.492 9.757 2.492 9.951 2.927l1.263 2.667 2.938.236c.073.006.142.024.21.051.365.084.574.438.512.803l-2.24 2.205.749 2.988c.057.233-.064.475-.27.64-.207.165-.471.184-.694.054l-2.789-1.599-2.789 1.6c-.224.13-.488.11-.695-.053a.752.752 0 01-.271-.64l.749-2.987-2.24-2.205a.752.752 0 01.512-.803c.069-.027.138-.045.21-.051l2.938-.236 1.263-2.667z"></path></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Footer -->
+<footer class="py-8 bg-[#2b3743] text-[#efefe1]">
+  <div class="container mx-auto text-center space-y-4">
+    <p>&copy; 2025 Ancore. All Rights Reserved.</p>
+    <nav class="space-x-4">
+      <!-- Privacy Policy Button -->
+      <a href="privacy.html" class="hover:text-white">Privacy Policy</a>
+      <!-- Terms of Service Button -->
+      <a href="terms.html" class="hover:text-white">Terms of Service</a>
+      <!-- Contact Us Button -->
+      <a href="support.html" class="hover:text-white">Contact Us</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>

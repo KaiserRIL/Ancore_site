@@ -1,0 +1,118 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Completed Projects - Ancore</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body class="bg-[#2b3743] text-[#efefe1] font-sans">
+  <!-- Navigation -->
+  <header class="fixed top-0 w-full bg-[#2b3743] backdrop-blur-md z-50">
+    <div class="container mx-auto flex items-center justify-between px-6 py-4">
+      <!-- Logo and Name -->
+      <div class="flex items-center space-x-3">
+        <!-- Image beside the Ancore name -->
+        <img src="https://i.imgur.com/xMk3Y7E.png" alt="Ancore Logo" class="w-12 h-12 object-contain">
+        <div class="text-lg font-bold text-[#efefe1]">Ancore</div>
+      </div>
+
+      <nav class="hidden md:flex space-x-6">
+        <a href="Ancore1.html" class="hover:underline text-[#efefe1]">Home</a>
+        <a href="products.html" class="hover:underline text-[#efefe1]">Products/Services</a>
+        <a href="about.html" class="hover:underline text-[#efefe1]">About Us</a>
+        <a href="support.html" class="hover:underline text-[#efefe1]">Customer Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Completed Projects Section -->
+  <section class="py-16 pt-24 bg-[#efefe1] text-[#2b3743]">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-12">Our Completed Projects</h2>
+      <p class="text-lg mb-8">We take pride in delivering the best earthquake-resistant solutions for our clients. Here are some of the projects we've successfully completed.</p>
+
+      <!-- Swiper Container -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- Project Card Slide 1 with Background Image -->
+          <div class="swiper-slide bg-cover bg-center h-[500px] p-12 flex items-center justify-center" style="background-image: url('https://i.imgur.com/GjVET0l.jpg');">
+            <div class="text-center text-white bg-opacity-50 p-4 rounded-lg backdrop-blur-lg">
+              <h3 class="text-xl font-semibold mb-4">Project A</h3>
+              <p class="mb-4">Building a high-rise in a seismic zone with cutting-edge technology to withstand the toughest conditions.</p>
+              <a href="#" class="text-[#2b3743] hover:text-blue-600" title="Learn more about Project A">View More</a>
+            </div>
+          </div>
+
+          <!-- Project Card Slide 2 with Background Image -->
+          <div class="swiper-slide bg-cover bg-center h-[500px] p-12 flex items-center justify-center" style="background-image: url('https://i.imgur.com/sMHmASe.jpg');">
+            <div class="text-center text-white bg-opacity-50 p-4 rounded-lg backdrop-blur-lg">
+              <h3 class="text-xl font-semibold mb-4">Project B</h3>
+              <p class="mb-4">A custom residential building designed with the latest earthquake-resistant innovations.</p>
+              <a href="#" class="text-[#2b3743] hover:text-blue-600" title="Learn more about Project B">View More</a>
+            </div>
+          </div>
+
+          <!-- Project Card Slide 3 with Background Image -->
+          <div class="swiper-slide bg-cover bg-center h-[500px] p-12 flex items-center justify-center" style="background-image: url('https://i.imgur.com/3D2Kgh6.jpg');">
+            <div class="text-center text-white bg-opacity-50 p-4 rounded-lg backdrop-blur-lg">
+              <h3 class="text-xl font-semibold mb-4">Project C</h3>
+              <p class="mb-4">A commercial space constructed with safety and sustainability at the forefront.</p>
+              <a href="#" class="text-[#2b3743] hover:text-blue-600" title="Learn more about Project C">View More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Swiper Pagination (Dots) -->
+        <div class="swiper-pagination"></div>
+
+        <!-- Swiper Navigation (Arrows) -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 bg-[#2b3743] text-[#efefe1]">
+    <div class="container mx-auto text-center space-y-4">
+      <p>&copy; <span id="current-year"></span> Ancore. All Rights Reserved.</p>
+      <nav class="space-x-4">
+        <a href="privacy.html" class="hover:text-white" title="Privacy Policy">Privacy Policy</a>
+        <a href="terms.html" class="hover:text-white" title="Terms of Service">Terms of Service</a>
+        <a href="contact.html" class="hover:text-white" title="Contact Us">Contact Us</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    // Initialize Swiper
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,  // Show one project card at a time
+      spaceBetween: 30,  // Space between slides
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true, // Enable clicking on dots
+      },
+      loop: true,  // Make the slider loop infinitely
+      autoplay: {
+        delay: 3000,  // Auto slide every 3 seconds
+        disableOnInteraction: false,  // Don't stop autoplay after user interaction
+      }
+    });
+
+    // Dynamically update the year in the footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
